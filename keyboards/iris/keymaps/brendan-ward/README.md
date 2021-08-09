@@ -4,10 +4,10 @@ https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/iris
 
 ## Make
 ```
-make keebio/iris/rev2:brendan-ward
+make iris/rev2:brendan-ward
 ```
 
-## Flash 
+## Flash
 ```
-make keebio/iris/rev2:brendan-ward:avrdude
+make iris/rev2:brendan-ward:avrdude
 ```

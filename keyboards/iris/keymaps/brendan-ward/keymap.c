@@ -15,13 +15,13 @@ extern keymap_config_t keymap_config;
 #define L_CURL LSFT(KC_LBRC)
 #define R_CURL LSFT(KC_RBRC)
 #define PIPE LSFT(KC_BSLASH)
-#define L_PAR LSFT(9)
-#define R_PAR LSFT(0)
+#define L_PAR LSFT(KC_9)
+#define R_PAR LSFT(KC_0)
 
 // spectacle shortcuts
-#define F_SCR LGUI(LALT(KC_F))
-#define L_SCR LGUI(LALT(KC_LEFT))
-#define R_SCR LGUI(LALT(KC_RIGHT))
+// #define F_SCR LGUI(LALT(KC_F))
+// #define L_SCR LGUI(LALT(KC_LEFT))
+// #define R_SCR LGUI(LALT(KC_RIGHT))
 
 
 enum custom_keycodes {
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_ESC, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_LGUI,           KC_LCTL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                     KC_LALT, KC_LSFT, KC_SPC,                  KC_BSPC,  LOWER,  SAVE
+                                     KC_LALT, KC_LSFT, KC_SPC,                   KC_BSPC,  LOWER,  SAVE
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
       L_PAR,   R_PAR,   KC_NO,  KC_SLASH,KC_BSLASH, KC_EQL,                              HOME,  KC_LEFT,  KC_UP,  KC_RIGHT,  END,    KC_NO,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼───────,─┼────────┼────────┼────────┼────────┼────────┤
-      F_SCR,   L_SCR,   R_SCR,    KC_NO,   KC_NO,   PIPE,  _______,          _______, KC_NO,   KC_PGDN, KC_DOWN,  KC_NO, KC_BSLASH, KC_DEL,
+      KC_NO,   KC_NO,   KC_NO,    KC_NO,   KC_NO,   PIPE,  _______,          _______, KC_NO,   KC_PGDN, KC_DOWN,  KC_NO, KC_BSLASH, KC_DEL,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, _______, _______,                   _______, _______, _______
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
